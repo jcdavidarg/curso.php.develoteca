@@ -8,7 +8,7 @@ try {
     $conexion = new PDO("mysql:host=$servidor;dbname=album", $usuario, $password);
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO `album`.`fotos` (`nombre`, `ruta`) VALUES ('jugando con la programacion', 'foto.jpg');";
+    $sql = "INSERT INTO `album`.`fotos` (`nombre`, `ruta`) VALUES ('mas pruebas', 'foto2.jpg');";
 
     $conexion->exec($sql);
 
