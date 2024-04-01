@@ -17,3 +17,7 @@ echo NOMBRE;
 
 /* echo NOMBRE;
  */
+
+define("EDAD", 33);
+
+echo "<br/>" . EDAD;
