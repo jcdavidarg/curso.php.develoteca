@@ -30,7 +30,7 @@ if ($_POST) {
 
 <body>
 
-    <form action="./ejercicio8.php" method="post">
+    <form action="./ejercicio8-operadoraciones-matematicas.php" method="post">
         <label for="valorA">Valor A:
             <input type="text" name="valorA" id="">
         </label>
