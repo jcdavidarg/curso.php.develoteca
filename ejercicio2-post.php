@@ -25,7 +25,7 @@ if ($_POST) { // $_POST:    ENVIO POR FORMULARIO
 </head>
 
 <body>
-    <form action="ejercicio2.php" method="post">
+    <form action="./ejercicio2-post.php" method="post">
         <!-- POST PARA ENVIAR LA INFORMACION DE LAS INPUT NO POR LA URL, LOS RECIBE Y LOS GUARDA -->
         <label for="nombre">Nombre: </label>
         <input type="text" name="txtNombre" id="nombre">
