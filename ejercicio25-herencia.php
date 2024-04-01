@@ -19,9 +19,16 @@ class Persona2
         $this->edad = 33;
         return "Mi edad es: " . $this->edad;
     }
+    public function asignarAltura($nuevaAltura)
+    {
+        $this->altura = $nuevaAltura;
+    }
+    public function mostrarAltura()
+    {
+        return "Mi altura es: " . $this->altura;
+    }
     public function datos()
     {
-        $this->altura = 1.74;
         return "Mi nombre es " . $this->nombre . " edad " . $this->edad . " altura " . $this->altura;
     }
 }
@@ -32,6 +39,10 @@ echo "INSTANCIA DE CLASE PERSONA";
 echo "<br/>";
 $objAlumno->asignarNombre("Cristian");
 echo $objAlumno->nombre;
+echo "<br/>";
+$objAlumno->asignarAltura(1.75);
+echo "<br/>";
+echo $objAlumno->mostrarAltura();
 echo "<br/>";
 echo $objAlumno->mostrarEdad();
 echo "<br/>";
@@ -60,3 +71,8 @@ $objTrabajador = new Trabajador();
 $objTrabajador->asignarNombre("Veronica");
 $objTrabajador->asignarPuesto("Diseñadora");
 $objTrabajador->presentacion();
+$objTrabajador->asignarAltura(1.70);
+echo "<br/>";
+echo $objTrabajador->mostrarAltura();
+echo "<br/>";
+echo $objTrabajador->datos();
