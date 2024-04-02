@@ -1,11 +1,13 @@
 <?php
 
+$uploads_dir = "./uploads/";
+
 if($_POST)
 {
     print_r($_POST);
-    print_r($_FILES["archivo"]["type"]); // SELECCIONO EL INPUT MEDIANTE SU NAME Y ELIGO SEGUN LO QUE TENGA DENTRO
+    print_r($_FILES["archivo"]["name"]); // SELECCIONO EL INPUT MEDIANTE SU NAME Y ELIGO SEGUN LO QUE TENGA DENTRO
 
-    move_uploaded_file($_FILES["archivo"]["tmp_name"], $_FILES["archivo"]["name"]); //MOVER ARCHIVOS SUBIDOS, TEMPORALES A RUTAS
+    move_uploaded_file($_FILES["archivo"]["tmp_name"], $uploads_dir . $_FILES["archivo"]["name"]); //MOVER ARCHIVOS SUBIDOS, TEMPORALES A RUTAS
 }
 ?>
 
